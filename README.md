@@ -1,3 +1,17 @@
+# Koda za odklep in zaklep sefa
+
+Ta koda bo odklepala in zaklepala moj sef.
+Uporabil bom levi in desni gumb ter pognal servo motor ki bo odklenil oz. zaklenil sef.
+
+### Snovanje kode
+
+Da začnem najprej pritisnem oba gumba hkrati.
+program za levo in desno izbere naključno število. Za to število pobliska levo in desno. 
+Koda potem pričakuje v roku nekaj sekund odgovor kot pritiska na gumbe levo in desno en pritisk več kot bliskov. Če je uspešno odklene, če ne pa pokaže sliko 'zaklep' in po nekaj sekund ponovno preide v čakanje na pritisk obeh gumbov za začetek.
+
+če je sef odklenjen, hkratni pritisk obeh gumbov zaklene sef.
+
+
 
 > Open this page at [https://amadejjustin.github.io/sef/](https://amadejjustin.github.io/sef/)
 
