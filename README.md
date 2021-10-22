@@ -5,7 +5,7 @@ Uporabil bom levi in desni gumb ter pognal servo motor ki bo odklenil oz. zaklen
 
 ### Snovanje kode
 
-Da začnem najprej pritisnem oba gumba hkrati.
+Da začnem, najprej pritisnem oba gumba hkrati.
 program za levo in desno izbere naključno število. Za to število pobliska levo in desno. 
 Koda potem pričakuje pritisk na gumbe levo in desno en pritisk več kot bliskov. Če je uspešno, pritisk na oba gumba odklene, če ne pa ponovno izbere naključno število.
 
