@@ -7,7 +7,7 @@ Uporabil bom levi in desni gumb ter pognal servo motor ki bo odklenil oz. zaklen
 
 Da začnem najprej pritisnem oba gumba hkrati.
 program za levo in desno izbere naključno število. Za to število pobliska levo in desno. 
-Koda potem pričakuje v roku nekaj sekund odgovor kot pritiska na gumbe levo in desno en pritisk več kot bliskov. Če je uspešno odklene, če ne pa pokaže sliko 'zaklep' in po nekaj sekund ponovno preide v čakanje na pritisk obeh gumbov za začetek.
+Koda potem pričakuje pritisk na gumbe levo in desno en pritisk več kot bliskov. Če je uspešno, pritisk na oba gumba odklene, če ne pa ponovno izbere naključno število.
 
 če je sef odklenjen, hkratni pritisk obeh gumbov zaklene sef.
 
