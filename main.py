@@ -19,7 +19,7 @@ def on_button_pressed_ab():
     if not (locked):
         lock()
         reset_lock()
-    elif key_set and (a_key == a_blink and b_key == b_blink):
+    elif key_set and (a_key + 1 == a_blink and b_key + 1 == b_blink):
         unlock()
     else:
         reset_lock()
@@ -39,10 +39,10 @@ def set_the_key():
     for index in range(a_blink):
         basic.show_leds("""
             . . # . .
-            . # . . .
-            # # # # #
-            . # . . .
-            . . # . .
+                        . # . . .
+                        # # # # #
+                        . # . . .
+                        . . # . .
         """)
         basic.pause(200)
         basic.clear_screen()
@@ -51,10 +51,10 @@ def set_the_key():
     for index2 in range(b_blink):
         basic.show_leds("""
             . . # . .
-            . . . # .
-            # # # # #
-            . . . # .
-            . . # . .
+                        . . . # .
+                        # # # # #
+                        . . . # .
+                        . . # . .
         """)
         basic.pause(200)
         basic.clear_screen()
@@ -72,10 +72,10 @@ def unlock():
     global locked
     basic.show_leds("""
         . . # . .
-        . # . # .
-        . . # # .
-        . # # # .
-        . . # . .
+                . # . # .
+                . . # # .
+                . # # # .
+                . . # . .
     """)
     locked = False
 b_blink = 0

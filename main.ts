@@ -17,7 +17,7 @@ input.onButtonPressed(Button.AB, function () {
     if (!(locked)) {
         lock()
         reset_lock()
-    } else if (key_set && (a_key == a_blink && b_key == b_blink)) {
+    } else if (key_set && (a_key - 1 == a_blink && b_key - 1 == b_blink)) {
         unlock()
     } else {
         reset_lock()
