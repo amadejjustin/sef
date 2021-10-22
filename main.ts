@@ -6,12 +6,30 @@ input.onButtonPressed(Button.A, function () {
 function lock () {
     locked = true
     basic.showLeds(`
+        . . . . #
+        . . . . #
         # . . . .
-        . # . . .
-        . . . . .
-        . . . . .
-        . . . . .
+        # . . . .
+        # . . . .
         `)
+    basic.pause(100)
+    basic.showLeds(`
+        # . . # #
+        # . . # #
+        # # . . #
+        # # . . #
+        # # . . #
+        `)
+    basic.pause(200)
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        `)
+    basic.pause(2000)
+    basic.clearScreen()
 }
 input.onButtonPressed(Button.AB, function () {
     if (!(locked)) {
@@ -68,14 +86,32 @@ function reset_lock () {
     b_key = 0
 }
 function unlock () {
-    basic.showLeds(`
-        . . # . .
-        . # . # .
-        . . # # .
-        . # # # .
-        . . # . .
-        `)
     locked = false
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        `)
+    basic.pause(100)
+    basic.showLeds(`
+        # . . # #
+        # . . # #
+        # # . . #
+        # # . . #
+        # # . . #
+        `)
+    basic.pause(200)
+    basic.showLeds(`
+        . . . . #
+        . . . . #
+        # . . . .
+        # . . . .
+        # . . . .
+        `)
+    basic.pause(500)
+    basic.clearScreen()
 }
 let b_blink = 0
 let b_key = 0
